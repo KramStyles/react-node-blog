@@ -13,3 +13,5 @@ const HomePage = () => (
 
     // This serves as react fragments. We can use the empty tags or go with <React.Fragment> inplace of extra divs
 );
+
+export default HomePage;
