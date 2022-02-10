@@ -14,6 +14,7 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-family: raleway;
   color: rebeccapurple;
+  font-variant: small-caps;
 }
 
 p{
@@ -50,4 +51,11 @@ nav .Link{
 nav .Link:hover{
   color: rebeccapurple;
   background-color: white;
+}
+
+@media screen and (max-width: 500px) {
+  h1, h2, h3, h4, h5, h6{
+    text-align: center;
+
+  }
 }
