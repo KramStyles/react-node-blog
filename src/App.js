@@ -4,12 +4,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './Components/HomePage';
+import AboutPage from './Components/AboutPage';
+import ArticleList from './Components/ArticleList';
+import ArticlePage from './Components/ArticlePage';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage/>} />
+        <Route path="about" element={<AboutPage/>} />
+        <Route path="article" element={<ArticlePage/>} />
+        <Route path="list" element={<ArticleList/>} />
       </Routes>
     </Router>
   );
