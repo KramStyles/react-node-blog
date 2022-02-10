@@ -14,7 +14,7 @@ const ArticlePage = () => (
                 <Link to={`/list/${item.country}`}>
                     <br/>
                     <h3>{item.country}</h3>
-                    <p>{item.description.substring(0, 100)} ...</p>
+                    <p>{item.description.substring(0, 100)}...</p>
                 </Link>
             ))}
         </div>
