@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 
@@ -20,6 +20,7 @@ function App() {
         <Route path="about" element={<AboutPage />} />
         <Route path="article" element={<ArticlePage />} />
         <Route path="list/:endpoint" element={<ArticleList />} />
+        <Route path = "*" element={<NotFound />}/>
       </Routes>
       <NavBar />
     </Router>
